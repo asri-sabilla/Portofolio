@@ -1,4 +1,4 @@
-const professions = ['Data Scientist'];
+const professions = ['Data Analyst','Data Scientist'];
 let professionIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -122,4 +122,19 @@ if (blogGrid) {
 const skillTags = document.querySelectorAll('.skill-tag');
 skillTags.forEach((tag, index) => {
     tag.style.setProperty('--delay', index);
+});
+const tabBtns = document.querySelectorAll(".tab-btn");
+const tabSections = document.querySelectorAll(".tab-section");
+
+tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const target = btn.getAttribute("data-tab");
+
+        tabBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        tabSections.forEach(sec => {
+            sec.style.display = sec.id === target ? "block" : "none";
+        });
+    });
 });

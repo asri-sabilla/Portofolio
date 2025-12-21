@@ -342,31 +342,34 @@
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            gap: 40px;
         }
 
         .portfolio-item {
             position: relative;
+            border-radius: 15px;
             overflow: hidden;
+            box-shadow: 0 0 40px rgba(0, 140, 255, 0.2);
+            background: rgba(255,255,255,0.05);
+            transition: transform .3s ease;
+            aspect-ratio: 16 / 9;
+            height: auto;
+        }
+
+        .portfolio-image {
+            position: relative;
             border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(33, 150, 243, 0.3);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            animation: fadeInUp 0.5s ease forwards;
-            opacity: 0;
-            animation-delay: calc(var(--delay) * 0.1s);
+            overflow: hidden;
+            box-shadow: 0 0 40px rgba(0, 140, 255, 0.2);
+            background: rgba(255,255,255,0.05);
+            transition: transform .3s ease;
         }
 
-        .portfolio-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .portfolio-image video {
+        .portfolio-image img {
             width: 100%;
-            height: 200px;
-            object-fit: cover;
+            height: 100%;
+            object-fit: fill; 
             display: block;
-            border-radius: 15px;
         }
 
         .portfolio-overlay {
@@ -752,4 +755,12 @@
     margin-bottom: 40px;
     text-align: center;
     padding-top: 20px;
+}
+.projects-page {
+    padding-top: 120px;
+}
+.tab-section.active {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
 }

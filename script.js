@@ -32,109 +32,78 @@ function type() {
     setTimeout(type, typeSpeedVar);
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-links a");
+    const sections = document.querySelectorAll("section");
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    setTimeout(type, 1000);
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+
+    if (currentPage === "index.html") {
+        window.addEventListener("scroll", () => {
+            let currentSection = "";
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (pageYOffset >= sectionTop - 200) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                const href = link.getAttribute("href");
+
+                if (href.startsWith("#")) {
+                    link.classList.remove("active");
+                    if (href.substring(1) === currentSection) {
+                        link.classList.add("active");
+                    }
+                }
+            });
+        });
+    }
 
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(type, 1000);
-});
-
-
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-links a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === current) {
-            link.classList.add('active');
-        }
-    });
-});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
-    });
-});
-
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.section:not(.hero)').forEach(section => {
-    observer.observe(section);
-});
-
-const portfolioGrid = document.querySelector('.portfolio-grid');
-if (portfolioGrid) {
-    const portfolioObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.querySelectorAll('.portfolio-item').forEach((item, index) => {
-                    item.style.setProperty('--delay', index);
-                    item.classList.add('animate');
-                });
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
-    }, observerOptions);
-    portfolioObserver.observe(portfolioGrid);
-}
+    });
+});
 
-const blogGrid = document.querySelector('.blog-grid');
-if (blogGrid) {
-    const blogObserver = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.querySelectorAll('.blog-post').forEach((post, index) => {
-                    post.style.setProperty('--delay', index);
-                    post.classList.add('animate');
-                });
+                entry.target.classList.add('animate');
             }
         });
-    }, observerOptions);
-    blogObserver.observe(blogGrid);
-}
-
-const skillTags = document.querySelectorAll('.skill-tag');
-skillTags.forEach((tag, index) => {
-    tag.style.setProperty('--delay', index);
-});
-const tabBtns = document.querySelectorAll(".tab-btn");
-const tabSections = document.querySelectorAll(".tab-section");
-
-tabBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        const target = btn.getAttribute("data-tab");
-
-        tabBtns.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-
-        tabSections.forEach(sec => {
-            sec.style.display = sec.id === target ? "block" : "none";
-        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
     });
+
+    document.querySelectorAll('.section:not(.hero)').forEach(section => {
+        observer.observe(section);
+    });
+});
+document.getElementById("downloadCV").addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.href = "images/CV ATS Asri Sabilla Putri.pdf";
+    link.download = "CV ATS Asri Sabilla Putri.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 });

@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo"><span>Data</span>Analyst</div>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="projects.html">More Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -24,152 +22,253 @@
 
         <!-- JUDUL BESAR -->
         <div class="portfolio-header">
-            <h2 class="section-title">Portofolio Showcase</h2>
+            <h2 class="section-title">Projects Showcase</h2>
             <p class="portfolio-subtitle">
                 Showcasing selected works that reflect my project, and story.
             </p>
         </div>
 
-        <!-- TAB NAVIGATION -->
-        <div class="tab-menu">
-            <button class="tab-btn active" data-tab="projects">Project</button>
-            <button class="tab-btn" data-tab="certifications">Certificate</button>
+    <!-- More Projects Section -->
+    <section id="more-projects" class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card" data-tags="Research">
+                    <div class="card-header">
+                        <h3 class="project-title">Apocolypse Sales Store — Sales Performance Dashboard</h3>
+                        <ul class="project-results">
+                            <li>Built an interactive sales dashboard summarizing overall performance, generating 434.75K total profit from 74 sales transactions across products and customers.</li>
+                            <li>Analyzed product and customer performance to identify key revenue contributors and underperforming items, supporting data-driven inventory and pricing decisions.</li>
+                            <li>Enabled dynamic exploration through customer and product filters, allowing stakeholders to quickly uncover insights for sales optimization and strategic planning.</li>
+                        </ul>
+                        <div class="project-tools">Power BI | Data Visualization | Business Intelligence | Sales Analytics</div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Methods:</span>
+                            Data Cleaning, KPI Definition, Sales Performance Analysis, Product & Customer Analysis, Interactive Dashboard Design
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asri-sabilla/Apocolypse_Project"
+                            target="_blank" class="link-btn">Github Repository</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-tags="Research">
+                    <div class="card-header">
+                        <h3 class="project-title">Customer Segmentation Prediction — Machine Learning</h3>
+                        <ul class="project-results">
+                            <li>Developed and evaluated multiple classification models to segment automotive customers into four classes (A, B, C, D), selecting Gradient Boosting as the best-performing model.</li>
+                            <li>Predicted customer segments for 2,627 new prospects, revealing Segment D as the dominant market, followed by A and C, enabling data-driven marketing prioritization.</li>
+                            <li>Translated model outputs into actionable business insights, supporting targeted marketing strategies, cost-efficient customer acquisition, and improved sales forecasting.</li>
+                        </ul>
+                        <div class="project-tools">Python | Machine Learning | Scikit-learn | Pandas | Business Analytics</div>
+                    </div>
+                    <div class="project-details">
+                        <div class="detail-row"><span class="detail-label">Methods:</span> Exploratory Data Analysis (EDA), Data Preprocessing, Classification Modeling, Gradient Boosting, Model Evaluation, Customer Segmentation, Business Insight Translation</div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asri-sabilla/Segmen_Project" target="_blank"
+                                class="link-btn">GitHub Repository</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-tags="Research">
+                    <div class="card-header">
+                        <h3 class="project-title">Global Cookie Sales Analysis — Monthly Performance Dashboard</h3>
+                        <ul class="project-results">
+                            <li>Analyzed monthly sales and profit trends across multiple countries, identifying seasonal patterns in unit sales and profit fluctuations throughout the year.</li>
+                            <li>Compared product performance by country to uncover top-selling cookie types and regional demand differences, supporting market and distribution strategy decisions.</li>
+                            <li>Built an interactive dashboard with dynamic filters by product, country, and time period, enabling stakeholders to explore insights and optimize sales planning.</li>
+                        </ul>
+                        <div class="project-tools">Excel | Data Visualization | Sales Analytics | Business Intelligence</div>
+                    </div>
+                    <div class="project-details">
+
+                        <div class="detail-row"><span class="detail-label">Method:</span> Data Aggregation, KPI Tracking, Time-Series Analysis, Product & Country Comparison, Interactive Dashboard Design
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://onedrive.live.com/:x:/g/personal/397e8fb48cf10397/IQChDWRkSwv-SYt1V2h2bwCDATNifj7IkdOEAaFp4ofP_88?rtime=RH_h57Zf3kg&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3gvYy8zOTdlOGZiNDhjZjEwMzk3L0lRQ2hEV1JrU3d2LVNZdDFWMmgyYndDREFUTmlmajdJa2RPRUFhRnA0b2ZQXzg4P2U9MEFjTnFy"
+                                target="_blank" class="link-btn">Worksheet</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-tags="Research">
+                    <div class="card-header">
+                        <h3 class="project-title">Global Sales & Profit Analysis — Interactive Dashboard</h3>
+                        <ul class="project-results">
+                            <li>Analyzed global sales and profit distribution using a geographic map, highlighting regional performance differences and high-profit markets.</li>
+                            <li>Identified monthly sales trends and growth patterns across multiple years, supporting seasonality analysis and sales forecasting.</li>
+                            <li>Performed cross-tab sales analysis by product category and time period, enabling detailed performance comparison and data-driven business decisions.</li>
+                        </ul>
+                        <div class="project-tools">Tableau | Data Visualization | Sales Analytics | Business Intelligence</div>
+                    </div>
+                    <div class="project-details">
+
+                        <div class="detail-row"><span class="detail-label">Method:</span> Geographic Analysis, Time-Series Trend Analysis, Cross-Tabulation, KPI Analysis, Interactive Dashboard Design</div>
+
+                        <div class="project-links">
+                            <a href="https://public.tableau.com/app/profile/asri.sabilla.putri7185/viz/GlobalSuperstoreAnalysis_17644096350110/Dashboard1"
+                                target="_blank" class="link-btn">Workbook</a>
+                        </div>
+                    </div>
+                </article>
+
+            <!-- Project 5 -->
+                <article class="project-card" data-tags="Research">
+                    <div class="card-header">
+                        <h3 class="project-title">Fujifilm Sales Analysis — Data Pipeline & Reporting</h3>
+                        <ul class="project-results">
+                            <li>Engineered a robust data pipeline by cleaning and normalizing raw sales data into a Third Normal Form (3NF) schema, drastically reducing data redundancy and ensuring high data integrity for reliable analysis.</li>
+                            <li>Performed sales analysis using PostgreSQL to identify top products, trends, and payment preferences.</li>
+                            <li>Automated the generation of comprehensive sales reports using Python, transforming complex query results into professional, easy-to-distribute PDF documents.</li>
+                        </ul>
+                        <div class="project-tools">Python | PostgreSQL | SQL | Data Warehousing | ETL | ReportLab | Pandas</div>
+                    </div>
+                    <div class="project-details">
+
+                        <div class="detail-row"><span class="detail-label">Method:</span> ETL, Database Normalization (3NF), SQL Analysis, Automated Reporting</div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/asri-sabilla/FujiFilm_Project"
+                                target="_blank" class="link-btn">Github Repository</a>
+                            <a href="https://drive.google.com/file/d/1dNvI-gv3xXJkYU6tuDFV5bP91oOyJli8/view?usp=sharing"
+                                target="_blank" class="link-btn">Laporan</a>
+                        </div>
+                    </div>
+                </article>
+
+            <!-- Project 6 -->
+            <article class="project-card infographic-card">
+            <div class="flip-card-inner">
+
+                <!-- FRONT -->
+                <div class="flip-card-front">
+                <h3 class="project-title">Education & Social Inequality Analysis — Data-Driven Infographic</h3>
+
+                <ul class="project-results">
+                    <li>Analyzed national education and social assistance data to identify school participation trends, dropout risks, and the impact of government programs on social and economic inequality.</li>
+                    <li>Transformed multi-source datasets into a clear, policy-oriented infographic, highlighting regional disparities and year-over-year changes in elementary school enrollment.</li>
+                </ul>
+
+                <div class="project-tools">R Studio | Python | Data Analysis | Data Visualization | Infographic Design</div>
+
+                <div class="project-method">
+                    <span class="label">Method:</span> Data Cleaning, Exploratory Data Analysis (EDA), Statistical Analysis, Data Visualization, Insight Storytelling</div>
+
+                <button class="flip-trigger">View Infographic</button>
+                </div>
+
+                <!-- BACK -->
+                <div class="flip-card-back">
+                <img
+                    src="images/infographic.jpeg"
+                    alt="Infographic"
+                    class="infographic-img"
+                />
+                </div>
+
+            </div>
+
+            </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+<section id="certifications" class="certifications-section">
+    <div class="container">
+
+        <div class="portfolio-header">
+            <h2 class="section-title">Certifications</h2>
+            <p class="portfolio-subtitle">
+                Professional certifications and training programs I have completed.
+            </p>
         </div>
 
-        <!-- PROJECT SECTION -->
-        <section id="projects" class="tab-section" style="display:block;">
-            <div class="container">
-                <div class="portfolio-grid">
+        <div class="cert-grid">
 
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/Global.png" alt="Project 1">
-                            <div class="portfolio-overlay">
-                                <h3>Analysis Global Superstore</h3>
-                                <p>Sales trends, crosstab, and profit map with Tableau</p>
-                                <a href="https://public.tableau.com/views/GlobalSuperstoreAnalysis_17644096350110/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/fmcg.png" alt="Project 2">
-                            <div class="portfolio-overlay">
-                                <h3>Forecast FMCG Personal</h3>
-                                <p>Innovation radar, trend forecasting, and product cannibalization using Python</p>
-                                <a href="https://nbviewer.org/github/asri-sabilla/FMCG/blob/main/data_fmcg.ipynb" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/cookie.png" alt="Project 3">
-                            <div class="portfolio-overlay">
-                                <h3>Data Visualization Cookie Sales</h3>
-                                <p>Monthly profit & sales per country</p>
-                                <a href="https://1drv.ms/x/c/397e8fb48cf10397/IQChDWRkSwv-SYt1V2h2bwCDATNifj7IkdOEAaFp4ofP_88?e=0AcNqr" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/segmen.png" alt="Project 4">
-                            <div class="portfolio-overlay">
-                                <h3>Customer Segment Classification</h3>
-                                <p>Predicting new customer groups</p>
-                                <a href="https://nbviewer.org/github/asri-sabilla/FMCG/blob/main/Customer_Segmentation.ipynb" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/apocolypse.png" alt="Project 5">
-                            <div class="portfolio-overlay">
-                                <h3>Data Visualization Apocolypse Sales Store</h3>
-                                <p>Interactive Dashboard Power BI</p>
-                                <a href="https://asrii.medium.com/business-insights-from-apocalypse-sales-store-dashboard-dd99bff6419d?postPublishedType=repub" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="images/ylobal.png" alt="Project 6">
-                            <div class="portfolio-overlay">
-                                <h3>Data Forecasting</h3>
-                                <p>Forecasting project description</p>
-                                <a href="#" class="btn">View Project</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="cert-card">
+                <img src="images/IBM Asri.jpg" alt="IBM Certification">
+                <div class="cert-overlay">
+                    <h3>Data Classification & Summarization</h3>
+                    <p>IBM Certification</p>
                 </div>
             </div>
-        </section>
 
-        <!-- CERTIFICATE SECTION -->
-        <section id="certifications" class="tab-section" style="display:none;">
-            <div class="container">
-                <div class="certifications-grid">
-
-                    <div class="cert-card">
-                        <img src="images/IBM Asri.jpg" alt="IBM">
-                        <div class="cert-overlay">
-                            <h3>Data Classification & Summarization</h3>
-                            <p>IBM Certification</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-card">
-                        <img src="images/bisaAI.png" alt="bisa AI">
-                        <div class="cert-overlay">
-                            <h3>Data Science</h3>
-                            <p>Bisa AI</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-card">
-                        <img src="images/dqlab.jpg" alt="dqlab">
-                        <div class="cert-overlay">
-                            <h3>Data Science with Python</h3>
-                            <p>DQLab</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-card">
-                        <img src="images/revou.png" alt="revou">
-                        <div class="cert-overlay">
-                            <h3>Intro to Data Analytics</h3>
-                            <p>Revou</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-card">
-                        <img src="images/pandai AI.jpg" alt="pandai AI">
-                        <div class="cert-overlay">
-                            <h3>Empowering Artificial Intelligence</h3>
-                            <p>Pandai AI</p>
-                        </div>
-                    </div>
-
-                    <div class="cert-card">
-                        <img src="images/Dibimbing.jpg" alt="Dibimbing">
-                        <div class="cert-overlay">
-                            <h3>Data Engineering</h3>
-                            <p>Dibimbing</p>
-                        </div>
-                    </div>
-
+            <div class="cert-card">
+                <img src="images/bisaAI.png" alt="Bisa AI">
+                <div class="cert-overlay">
+                    <h3>Data Science</h3>
+                    <p>Bisa AI</p>
                 </div>
             </div>
-        </section>
+
+            <div class="cert-card">
+                <img src="images/dqlab.jpg" alt="DQLab">
+                <div class="cert-overlay">
+                    <h3>Data Science with Python</h3>
+                    <p>DQLab</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="images/revou.png" alt="RevoU">
+                <div class="cert-overlay">
+                    <h3>Intro to Data Analytics</h3>
+                    <p>RevoU</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="images/pandai AI.jpg" alt="Pandai AI">
+                <div class="cert-overlay">
+                    <h3>Empowering Artificial Intelligence</h3>
+                    <p>Pandai AI</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="images/Dibimbing.jpg" alt="Dibimbing">
+                <div class="cert-overlay">
+                    <h3>Data Engineering</h3>
+                    <p>Dibimbing</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="images/samsung.jpg" alt="Samsung">
+                <div class="cert-overlay">
+                    <h3>Samsung Innovation Campus BATCH 7</h3>
+                    <p>Samsung</p>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <img src="images/hackaton.png" alt="Hackaton">
+                <div class="cert-overlay">
+                    <h3>Finalist in Study2Challange</h3>
+                    <p>Binus University</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
     <section id="contact" class="section projects-page" style="opacity:1; transform:none;">
         <div class="container">
-            <h2 class="blog-title">Contact Me</h2>
+            <h2 class="blog-title">Let's Connect!</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -185,7 +284,7 @@
                         <p>Available: Mon-Fri, 7AM-10PM</p>
                     </div>
                     <div class="social-links-contact">
-                        <a href="https://www.linkedin.com/in/asri-sabilla-putri-a57870280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/asrisabilla" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/asri-sabilla" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://asrii.medium.com/" aria-label="Medium"><i class="fab fa-medium"></i></a>
                         <a href="https://www.instagram.com/asri.sabilla/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -223,7 +322,7 @@
         </div>
     </section>
     </div></section>
-<script src="projects.js"></script>
-<script src="script.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

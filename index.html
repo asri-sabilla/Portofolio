@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my porto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo"><span>Data</span>Analyst</div>
         <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#featured-projects">Featured Projects</a></li>
+            <li><a href="projects.html">More Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+    </ul>
+
     </nav>
 
     <section class="hero" id="home">
@@ -34,7 +34,7 @@
                 <a href="#contact" class="btn">Contact</a>
             </div>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/asri-sabilla-putri-a57870280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/asrisabilla" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/asri-sabilla" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.instagram.com/asri.sabilla/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="https://asrii.medium.com/" aria-label="Medium"><i class="fab fa-medium"></i></a>
@@ -43,49 +43,249 @@
         </div>
     </section>
 
-   <section id="resume" class="section">
-    <div class="container">
-        <h2 class="blog-title">Resume</h2>
-        <div class="resume-content">
-            <div class="resume-left">
-                <h3>Experience</h3>
-                <div class="experience-item">
-                    <h4>Guest Speaker Data Visualization</h4>
-                    <p class="company">PKM lecturer information systems</p>
-                    <p class="date">13 November 2025</p>
-                    <p>I am responsible for delivering material, practical demonstrations, and direct assistance to 12th grade vocational school students regarding data visualization techniques with MS Excel.</p>
-                </div>
-                <div class="experience-item">
-                    <h4>Data Analyst</h4>
-                    <p class="company">Orionids Inkubator Bisnis</p>
-                    <p class="date">Des 2023 - Sept 2024</p>
-                    <p>Responsible for assisting in analyzing market trends, recording student businesses on campus, and creating graphs of student business growth.</p>
-                </div>
-            </div>
-            <div class="resume-right">
-                <h3>Education</h3>
-                <div class="education-item">
-                    <h4>Undergraduate Information System</h4>
-                    <p class="university">Ary Ginanjar University - Cumulative GPA : 3.84</p>
-                    <p class="date">2023 - 2027, Expected</p>
-                    <p>Currently a 3rd year student specializing in information systems in the fields of data analysis, data processing, and data scientist.</p>
-            </div>
+<div class="resume-content">
+    <div class="resume-left">
+        <h3>Education</h3>
+        <div class="info-card-educ">
             <div class="education-item">
-                    <h3>Profesional Skills</h3>
-                <ul class="certifications">
-                    <li>Project Management - Microsoft Project</li>
-                    <li>Machine Learning - Python (scikit-learn, pandas, numpy)</li>
-                    <li>Data Analysis & Visualization - Tableau, Power BI, Excel</li>
-                    <li>Data Cleaning & Preparation - Python & Excel</li>
-                    <li>Communication Skills</li>
-                    <li>Teamwork & Collaboration</li>
-                    <li>Public Speaking</li>
-                    <li>Problem Solving & Critical Thinking</li>
+                <h4>Undergraduate Information System</h4>
+                <div class="education-header">
+                <p class="university">Ary Ginanjar University</p>
+                <p class="date">2023 - 2027, Expected</p>
+                </div>
+                <ul>
+                    <li>Awarded a full undergraduate scholarship for four years</li>
+                    <li>Actively involved in organizations including the Business Department Student Executive Board (BEM).</li>
+                    <li>Actively participated in competitions and analytical challenges related to data science.</li>
                 </ul>
+            </div>
+            <!-- GPA Display -->
+            <div class="gpa-display">
+                <span class="gpa-text">3.84 / 4.00 GPA</span>
             </div>
         </div>
     </div>
-</section>
+            <div class="resume-right">
+            <div class="education-item">
+                    <h3>Technical Skills</h3>
+                <div class="info-card">
+                    <div class="tech-stack">
+                    <div class="tech-item" title="SQL"><img src="images/sql.jpg" alt="SQL"></div>
+                    <div class="tech-item" title="Python"><img src="images/python.png" alt="Python"></div>
+                    <div class="tech-item" title="Power BI"><img src="images/powerbi.jpg" alt="Power BI"></div>
+                    <div class="tech-item" title="Tableau"><img src="images/tableau.png" alt="Tableau"></div>
+                    <div class="tech-item" title="Excel"><img src="images/excel.png" alt="Excel"></div>
+                    <div class="tech-item" title="Visual Studio Code"><img src="images/vscode.png" alt="Visual Studio Code"></div>
+                    <div class="tech-item" title="R"><img src="images/postgresql.png" alt="R"></div>
+                    <div class="tech-item" title="Colab"><img src="images/colab.png" alt="Colab"></div>
+                    <div class="tech-item" title="Jupiter Notebook"><img src="images/jupiter.jpg" alt="Jupiter Notebook"></div>
+                    </div>
+
+                        <!-- Soft Skills (Embedded here as requested in previous 2x2 step) -->
+                        <div style="margin-top: 1rem;">
+                        <h3>Soft Skills</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Detail-Oriented</span>
+                                <span class="skill-tag">Communicative</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Teamwork</span>
+                                <span class="skill-tag">Critical Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+ <!-- Projects Section -->
+    <section id="featured-projects" class="projects-section">
+        <div class="container">
+            <!-- Updated Title to match Hero Profile Name Style -->
+            <h2 class="section-title">Featured Projects</h2>
+
+            <!-- New Unified Project Layout (List View) -->
+            <div class="project-layout-list">
+
+                <!-- Project 1: Deforestation Data Visualization Dashboard -->
+                <article class="project-item">
+                   <div class="project-media">
+                <a href="images/dashboard-defores.png" target="_blank" class="pdf-lightbox-trigger">
+                    <img src="images/dashboard-defores.png" alt="Dashboard Deforestation">
+
+                    <div class="media-overlay">
+                        <span class="iconify" data-icon="heroicons:presentation-chart-bar"></span>
+                        <span>Views</span>
+                    </div>
+                </a>
+            </div>
+
+                    <div class="project-content">
+                        <h3 class="project-heading"><span style="color: #fff;">Deforestation</span> Data Visualization
+                            <span style="color: #fff;">Dashboard</span>
+                        </h3>
+                        <div class="project-subtitle">Feature Engineering, Aggregation, Segmentation, CTE</div>
+
+                        <div class="project-description">
+                            <p>Built an interactive Power BI dashboard analyzing Indonesia’s deforestation trends (2001–2022). Identified Kalimantan and Sumatera as the top contributors (>80%) and uncovered key temporal patterns to support data-driven environmental insights.
+                            </p>
+                        </div>
+
+                        <div class="project-meta-grid">
+                            <div class="meta-item">
+                                <span class="meta-label">Goal</span>
+                                <span class="meta-value">Enable data-driven insights to support environmental policy evaluation</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Tools</span>
+                                <span class="meta-value">Power BI</span>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                        <a href="https://github.com/asri-sabilla/deforestation_project"
+                            target="_blank" class="btn-outline">Github Repository</a>
+                    </div>
+                    </div>
+            </div>
+            </article>
+
+            <!-- Project 2: FMCG (Carousel) -->
+            <article class="project-item">
+                <!-- Media Column -->
+                <div class="project-media">
+                    <div class="media-grid-2x2">
+                        <img src="images/fmcg (1).png" alt="PT KAI Schema" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                        <img src="images/fmcg (2).png" alt="PT KAI ERD" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                        <img src="images/fmcg (3).png" alt="PT KAI Flow" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                        <img src="images/fmcg (4).png" alt="PT KAI Interface" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="project-content">
+                    <h3 class="project-heading">Forecast <span style="color: #fff;">FMCG </span> Data Science Analysis<span style="color: #fff;"></span></h3>
+                    <div class="project-subtitle">Forecasting, Trend Analysis, Business Strategy
+                    </div>
+
+                    <div class="project-description">
+                        <p>Performed end-to-end FMCG sales forecasting and brand performance analysis using Python. Identified demand patterns, evaluated cannibalization risks, and translated insights into actionable business strategies.</p>
+                    </div>
+
+                    <div class="project-meta-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">Goal</span>
+                            <span class="meta-value">Enable data-driven decisions to optimize sales and inventory</span>
+                        </div>
+                        <!-- Tools (Formerly Tech Stack) -->
+                        <div class="meta-item">
+                            <span class="meta-label">Tools</span>
+                            <span class="meta-value">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/asri-sabilla/FMCG"
+                            target="_blank" class="btn-outline">Github Repository</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: Dashboard Excel -->
+            <article class="project-item">
+                <div class="project-media">
+                <a href="images/shipment.png" target="_blank" class="pdf-lightbox-trigger">
+                    <img src="images/shipment.png" alt="Dashboard Excel Slides">
+
+                    <div class="media-overlay">
+                        <span class="iconify" data-icon="heroicons:presentation-chart-bar"></span>
+                        <span>Views</span>
+                    </div>
+                </a>
+
+                </div>
+                <div class="project-content">
+                    <h3 class="project-heading"><span style="color: #fff;">Shipment</span> Dashboard Monitoring</h3>
+                    <div class="project-subtitle">Data Visualization, Performance Monitoring, Business Insights</div>
+
+                    <div class="project-description">
+                        <p>Develop interactive dashboards to monitor delivery performance based on revenue, service type, customer segment, destination, and delivery timeliness. Identify monthly delivery trends to support operational evaluation.</p>
+                    </div>
+
+                    <div class="project-meta-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">Goal</span>
+                            <span class="meta-value">Monitor logistics performance and support data-driven operational decisions</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tools</span>
+                            <span class="meta-value">Microsoft Excel</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://excel.cloud.microsoft/open/onedrive/?docId=397E8FB48CF10397%21sc924ccc413d1492ea57e62901ecd3bc8&driveId=397E8FB48CF10397" target="_blank"
+                            class="btn-outline">Worksheet</a>
+                        <a href="https://github.com/asri-sabilla/Shipment_Project" target="_blank"
+                            class="btn-outline">Github Repository</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Time Series Analysis -->
+            <article class="project-item">
+                <div class="project-media">
+                    <div class="media-grid-2x2">
+                        <img src="images/padi (1).jpg" alt="Exponential Smoothing Table" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                        <img src="images/padi (3).png" alt="Stationarity Test" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                        <img src="images/padi (4).jpg" alt="Periodogram" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                        <img src="images/padi (2).jpg" alt="ARFIMA Modeling" class="lightbox-trigger"
+                            style="cursor: zoom-in; object-position: top left;">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-heading">Rice Production <span style="color: #fff;">Forecasting Analysis</span></h3>
+
+                    <div class="project-subtitle">Time Series Analysis, Forecasting</div>
+
+                    <div class="project-description">
+                        <p>Analyzed rice production data in Aceh Province (1993–2020) using SMA, Double Exponential Smoothing, and ARIMA. Identified a long-term upward production trend, with forecasting results indicating continued growth despite short-term fluctuations driven by external factors.</p>
+                    </div>
+
+                    <div class="project-meta-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">Goal</span>
+                            <span class="meta-value">Support data-driven agricultural planning through production forecasting.</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tools</span>
+                            <span class="meta-value">R Studio, Excel</span>
+                        </div>
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://excel.cloud.microsoft/open/onedrive/?docId=397E8FB48CF10397%21s1f6e2f5a2df94053bd2ab5559a7453ba&driveId=397E8FB48CF10397"
+                            target="_blank" class="btn-outline">Worksheet</a>
+                        <a href="https://drive.google.com/file/d/1VD1su_MuaKdd6e1BGLoMyj5sc6pe5Us5/view?usp=sharing"
+                            target="_blank" class="btn-outline">Laporan</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="more-projects">
+        <center>
+        <a href="projects.html" target="_blank" class="btn-outline">More Projects</a>
+        </center>
+        </div>
+</div>
+    </div>
+    </section>
 
     <section id="blog" class="section">
         <div class="container">
@@ -163,7 +363,7 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="blog-title">Contact Me</h2>
+            <h2 class="blog-title">Let's Connect!</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -179,7 +379,7 @@
                         <p>Available: Mon-Fri, 7AM-10PM</p>
                     </div>
                     <div class="social-links-contact">
-                        <a href="https://www.linkedin.com/in/asri-sabilla-putri-a57870280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/asrisabilla" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/asri-sabilla" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://asrii.medium.com/" aria-label="Medium"><i class="fab fa-medium"></i></a>
                         <a href="https://www.instagram.com/asri.sabilla/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -216,6 +416,6 @@
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

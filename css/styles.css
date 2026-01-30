@@ -1536,3 +1536,40 @@
     margin-bottom: 40px;  
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .project-heading {
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .projects-section {
+    padding: 60px 0;
+  }
+
+  .project-layout-list {
+    gap: 50px;
+  }
+
+  .project-heading {
+    font-size: 20px;
+  }
+
+  .project-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .media-grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+
+  .project-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -856,17 +856,21 @@ body {
 /* ===============================
    HIDE NAVBAR ON MOBILE
 ================================ */
+/* ===============================
+   NAVBAR MOBILE (LOGO ONLY)
+================================ */
 @media (max-width: 768px) {
   .navbar {
-    display: none;
+    padding: 14px 20px;
+    justify-content: space-between
   }
 
-  body {
-    padding-top: 0;
+  .logo {
+    font-size: 20px;
   }
 
-  .projects-page {
-    padding-top: 60px; /* ganti offset navbar */
+  .nav-links {
+    display: none; 
   }
 }
 
@@ -881,9 +885,11 @@ html, body {
     min-height: auto;
   }
 
+ @media (max-width: 768px) {
   .projects-page {
-    padding-top: 100px;
+    padding-top: 90px;
   }
+}
 
   .container {
     padding: 0 16px;

@@ -321,28 +321,6 @@
             transform: translateY(-3px);
         }
 
-        @media (max-width: 1024px) {
-            .about-content,
-            .resume-content,
-            .contact-content {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .portfolio-grid,
-            .blog-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .portfolio-grid,
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* CERTIFICATIONS SECTION */
 .certifications-section {
     margin-top: 5rem;
 }
@@ -657,13 +635,6 @@
     transform: scale(1.05);
 }
 
-/* =========================================
-   Infographic Flip Card Styles
-   ========================================= */
-
-/* ===============================
-   RESET & ROOT
-================================ */
 * {
   box-sizing: border-box;
 }
@@ -699,9 +670,7 @@ body {
         inset 0 1px 0 rgba(255, 255, 255, 0.03);
 
     transition: all 0.35s ease;
-  /* width: 100%;
-  max-width: 820px; */
-  perspective: 1200px;
+    perspective: 1200px;
 }
 
 /* ===============================
@@ -710,13 +679,12 @@ body {
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 620px;               /* ⬅️ SATU TINGGI FIX */
+  height: 620px;               
   transform-style: preserve-3d;
   transition: transform 0.9s cubic-bezier(.4,.2,.2,1);
   border-radius: var(--radius);
 }
 
-/* FLIP SAAT HOVER KE TOMBOL */
 .infographic-card:has(.flip-trigger:hover) .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -736,9 +704,6 @@ body {
   overflow: hidden;
 }
 
-/* ===============================
-   FRONT
-================================ */
 .flip-card-front {
   background: var(--bg-gradient);
   color: var(--text-main);
@@ -778,7 +743,6 @@ body {
   font-weight: 600;
 }
 
-/* BUTTON */
 .flip-trigger {
   margin-top: 20px;
   align-self: flex-start;
@@ -797,9 +761,6 @@ body {
   box-shadow: 0 0 18px rgba(77,163,255,0.5);
 }
 
-/* ===============================
-   BACK (INFOGRAPHIC)
-================================ */
 .flip-card-back {
   background: #000;
   transform: rotateY(180deg);
@@ -849,16 +810,6 @@ body {
   }
 }
 
-
-/* ===============================
-   RESPONSIVE NAVBAR
-================================ */
-/* ===============================
-   HIDE NAVBAR ON MOBILE
-================================ */
-/* ===============================
-   NAVBAR MOBILE (LOGO ONLY)
-================================ */
 @media (max-width: 768px) {
   .navbar {
     padding: 14px 20px;
@@ -915,9 +866,6 @@ html, body {
   }
 }
 
-/* ===============================
-   CONTACT RESPONSIVE FIX
-================================ */
 @media (max-width: 768px) {
   #contact {
     padding-left: 0;
@@ -940,7 +888,7 @@ html, body {
   .contact-form {
     width: 100%;
     max-width: 100%;
-    min-width: 0; /* 🔥 PENTING */
+    min-width: 0; 
   }
 
   .contact-form form {
@@ -955,3 +903,86 @@ html, body {
     font-size: 18px;
   }
 }
+/* =====================================
+   INFOGRAPHIC CARD – MOBILE REAL FIX
+===================================== */
+@media (max-width: 768px) {
+
+  /* Jangan kunci tinggi card */
+  .flip-card-inner {
+    height: auto !important;
+    min-height: unset !important;
+    transform: none !important;
+  }
+
+  /* Front card harus ikut konten */
+  .flip-card-front {
+    position: relative !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding-bottom: 40px; /* 🔥 ruang aman bawah */
+  }
+
+  /* Back disembunyikan default */
+  .flip-card-back {
+    display: none;
+    position: relative !important;
+    height: auto !important;
+    overflow: visible !important;
+    transform: none !important;
+  }
+
+  /* Saat klik tombol */
+  .infographic-card:focus-within .flip-card-front {
+    display: none;
+  }
+
+  .infographic-card:focus-within .flip-card-back {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* List jangan dipotong */
+  .project-results {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+.info-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .info-toggle {
+    display: none; /* tetap hidden, cuma dipakai logic */
+  }
+}
+
+  /* default */
+  .flip-card-back {
+    display: none;
+  }
+
+  /* saat checkbox aktif */
+  .info-toggle:checked ~ .flip-card-inner .flip-card-front {
+    display: none;
+  }
+
+  .info-toggle:checked ~ .flip-card-inner .flip-card-back {
+    display: block;
+    margin-top: 20px;
+  }
+
+  /* matikan flip desktop di mobile */
+  .flip-card-inner {
+    transform: none !important;
+  }
+}
+.info-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+

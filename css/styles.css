@@ -556,61 +556,6 @@
     border-color: rgba(74, 144, 226, 0.4);
 }
 
-@media (max-width: 768px) {
-
-    /* Layout kolom jadi 1 */
-    .resume-content {
-        flex-direction: column;
-        gap: 32px;
-        align-items: stretch;
-    }
-
-    .resume-left,
-    .resume-right {
-        max-width: 100%;
-    }
-
-    /* Education header stack ke bawah */
-    .education-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-    }
-
-    /* GPA center di mobile */
-    .gpa-display {
-        align-self: center;
-        margin-top: 1rem;
-        width: 100%;
-    }
-
-    /* Tech stack lebih aman di HP */
-    .tech-stack {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-    }
-
-    .tech-item img {
-        width: 100%;
-        max-width: 60px;
-        margin: auto;
-        display: block;
-    }
-
-    /* Soft skill wrap rapi */
-    .skill-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    .skill-tag {
-        font-size: 0.85rem;
-        padding: 6px 10px;
-    }
-}
-
         #blog {
         padding-bottom: 30px; /* Bebas 60-100px */
         }
@@ -1632,4 +1577,57 @@ img {
   margin: 0 auto;
   padding-left: 54px;
   padding-right: 54px;
+}
+@media (max-width: 768px) {
+
+    .resume-content {
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+        padding: 0 16px;   
+        box-sizing: border-box;
+    }
+
+    .resume-left,
+    .resume-right {
+        max-width: 100%;
+        text-align: left; 
+    }
+
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .gpa-display {
+        align-self: center;
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .tech-stack {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* ✅ ideal */
+        gap: 12px;
+        justify-items: center;
+    }
+
+    .tech-item img {
+        width: 100%;
+        max-width: 56px;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .skill-tag {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
 }
